@@ -21,7 +21,7 @@ const Skills = () => {
                 {SKILLS_CONTENT.map(({ name, stack }) => (
                     <motion.div key={name}>
                         <div className='flex flex-col md:flex-row md:justify-between'>
-                            <div className='text-smmd: w-1/4 mb-2 md:mb-0 p-4'>
+                            <div className='text-sm md:w-1/4 mb-2 md:mb-0 p-4'>
                                 {name}
                             </div>
                             <div className='md:w-3/4 mb-10'>
