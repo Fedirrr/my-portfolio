@@ -88,6 +88,33 @@ export const aboutTextVariants = {
     },
 }
 
+export const menuVariants = {
+    hidden: {
+        opacity: 0,
+        y: -20,
+        transition: {
+            duration: 0.3,
+            ease: "easeInOut",
+        },
+    },
+    visible: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            duration: 0.3,
+            ease: "easeInOut",
+        },
+    },
+    exit: {
+        opacity: 0,
+        y: -20,
+        transition: {
+            duration: 0.3,
+            ease: "easeInOut",
+        },
+    },
+};
+
 export const experienceContainerVariants = {
     hidden: {opacity: 0, y: 50,},
     visible: {
@@ -111,48 +138,28 @@ export const childVariants = {
 }
 export const contactsTextVariants = {
     hidden: {opacity: 0, y: 20,},
-    visible: (delay = 0) => ({
+    visible: {
         opacity: 1,
         y: 0,
         transition: {
             duration: 0.8,
             ease: "easeOut",
-            delay
         }
-    })
+    }
 }
 
 export const iconVariants = {
     hidden: {opacity: 0, scale: 0,},
-    visible: (delay = 0) => ({
+    visible: {
         opacity: 1,
         scale: 1,
         transition: {
             duration: 0.5,
             ease: "easeOut",
-            delay
+
         }
-    })
+    }
 }
-
-
-
-export const animate = [
-    'animate1',
-    'animate2',
-    'animate3',
-    'animate4',
-    'animate5',
-    'animate6',
-]
-export const animateStyles = [
-    'bg-yellow-500 w-[350px] h-[250px] rounded-full absolute',
-    'bg-orange-500 w-[360px] h-[260px] rounded-full absolute',
-    'bg-green-500 w-[370px] h-[270px] rounded-full absolute',
-    'bg-purple-500 w-[380px] h-[280px] rounded-full absolute',
-    'bg-blue-500 w-[390px] h-[290px] rounded-full absolute',
-    'bg-pink-500 w-[400px] h-[300px] rounded-full absolute',
-]
 
 export const textVariants = {
     hidden: {opacity: 0, y: 50},
@@ -176,3 +183,21 @@ export const imgVariants = {
         transition: {duration: 1.2, ease: "easeInOut"}
     },
 }
+
+export const animate = [
+    'animate1',
+    'animate2',
+    'animate3',
+    'animate4',
+    'animate5',
+    'animate6',
+]
+export const animateStyles = [
+    'bg-yellow-500 w-[350px] h-[250px] rounded-full absolute',
+    'bg-orange-500 w-[360px] h-[260px] rounded-full absolute',
+    'bg-green-500 w-[370px] h-[270px] rounded-full absolute',
+    'bg-purple-500 w-[380px] h-[280px] rounded-full absolute',
+    'bg-blue-500 w-[390px] h-[290px] rounded-full absolute',
+    'bg-pink-500 w-[400px] h-[300px] rounded-full absolute',
+]
+

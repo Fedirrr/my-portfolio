@@ -1,16 +1,15 @@
 import {motion} from "framer-motion";
 import {PROJECTS} from "../constants/index.js";
 import {projectsVariants} from "../constants/animationVariants.js";
+import Section from "./Section.jsx";
 
 
 const Projects = () => {
     return (
-        <section className="px-6 py-10" id="work">
-            <h1 className='text-4xl md:text-6xl font-medium tracking-tight'>
-                Work
-            </h1>
-            <div className="h-1 w-20 mb-8 bg-white"></div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Section
+            id="work"
+            title={'Work'}
+            content={<div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {PROJECTS.map(({name, description, image, link, website, commercial}) => (
                     <motion.div
                         key={name}
@@ -47,9 +46,10 @@ const Projects = () => {
                         </div>
                     </motion.div>
                 ))}
-            </div>
-        </section>
-    );
-};
+            </div>}
+        />
+    )
+}
+
 
 export default Projects;
