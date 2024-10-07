@@ -111,7 +111,7 @@ export const EXPERIENCES = [
         summary: ['Code review', 'Task delegation & decomposition', 'Build CI/CD pipeline', 'Communication with SEO team', 'Experience in project management from scratch.']
     },
     {
-        name: 'Jun 2020 — Dec 2021',
+        name: 'Mar 2020 — Dec 2021',
         job: 'Junior React Frontend Developer at Creative Solutions',
         location: 'Remote, Uzhhorod, Ukraine',
         items: [
