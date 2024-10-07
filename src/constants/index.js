@@ -112,7 +112,7 @@ export const EXPERIENCES = [
     },
     {
         name: 'Mar 2020 — Dec 2021',
-        job: 'Junior React Frontend Developer at Creative Solutions',
+        job: 'Junior React Frontend Developer at SyncMobile',
         location: 'Remote, Uzhhorod, Ukraine',
         items: [
             'Developed functionality for canvas editor to edit electrical drawings.',
