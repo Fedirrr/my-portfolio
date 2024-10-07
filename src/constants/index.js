@@ -16,8 +16,8 @@ export const HERO_CONTENT = {
         `I'm Fedir Pavlyshynets, a creative frontend developer, crafting immersive and intuitive web experiences.`,
     description:
         `I'm currently helping businesses bring their visions to life through interactive digital solutions.`,
-    resumeLinkText: 'Download Resume',
-    resumeLink: '/CV_Fedir_Pavlyshynets.pdf',
+    resumeLinkText: 'Check Resume',
+    resumeLink: 'https://drive.google.com/file/d/1Pc43C64-oJiEez3x-5MOb69db3FCOmgL/view?usp=drive_link',
 };
 
 export const PROJECTS = [
