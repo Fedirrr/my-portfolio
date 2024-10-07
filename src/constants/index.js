@@ -99,7 +99,7 @@ export const EXPERIENCES = [
         'projects within deadlines', 'Lighthouse improvements']
     },
     {
-        name: 'Jan 2022 - Fed 2023',
+        name: 'Jan 2022 - Feb 2023',
         job: 'Middle React Frontend Engineer at Lohika.',
         location: 'Remote, Lviv, Ukraine',
         items: [
