@@ -18,7 +18,7 @@ const ExpertiseSummary = ({dataArray}) => {
                 >
                     <div className='flex flex-col md:flex-row md:justify-between'>
 
-                        <div className='text-sm md:w-1/4 mb-2 md:mb-0 p-4'>
+                        <div className='text-lg md:w-1/4 mb-2 md:mb-0 p-4'>
                             {name}
                         </div>
 
@@ -34,19 +34,20 @@ const ExpertiseSummary = ({dataArray}) => {
                                         {location}
                                     </p>
                                 )}
-                                <ul className='list-disc list-inside space-y-2 mb-2 text-sm'>
+                                <ul className='list-disc list-inside space-y-2 mb-2 text-lg'>
                                     {items.map((desc, index) => (
                                         <li key={index}>
                                             {desc}
                                         </li>
                                     ))}
                                 </ul>
+
                                 {summary && (
                                     <div className='mt-8'>
                                         <h2 className='text-xl mb-2'>
                                             Responsibilities:
                                         </h2>
-                                        <ul className='list-disc list-inside space-y-2 text-sm'>
+                                        <ul className='list-disc list-inside space-y-2 text-lg'>
                                             {summary.map((desc,index) => (
                                                 <li key={index}>
                                                     {desc}
@@ -59,7 +60,6 @@ const ExpertiseSummary = ({dataArray}) => {
                         </div>
                     </div>
                 </motion.div>
-
             ))}
         </motion.div>
     );
