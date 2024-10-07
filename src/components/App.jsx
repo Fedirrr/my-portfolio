@@ -9,6 +9,9 @@ import {EXPERIENCES, SKILLS_CONTENT} from "../constants/index.js";
 import Section from "./Section.jsx";
 
 const App = () => {
+
+
+
     return (
         <>
             <BlurBackground/>

@@ -17,7 +17,8 @@ export const HERO_CONTENT = {
     description:
         `I'm currently helping businesses bring their visions to life through interactive digital solutions.`,
     resumeLinkText: 'Check Resume',
-    resumeLink: 'https://drive.google.com/file/d/1pA_RHwWKIJIvYlNKpX88RFoERR_tGwTN/view?usp=drive_link',
+    resumeLinkUkr: 'https://drive.google.com/file/d/1OK0TPSwOhZCf0-7IQCTGIhf0V1f-XZfZ/view?usp=drive_link',
+    resumeLinkWorld: 'https://drive.google.com/file/d/1KjCDIIoWG9TcA57HMpBFLLZ9jl--_g7t/view?usp=drive_link'
 };
 
 export const PROJECTS = [

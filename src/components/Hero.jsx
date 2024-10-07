@@ -1,10 +1,21 @@
 import {motion} from "framer-motion";
 import {HERO_CONTENT} from "../constants/index.js";
-import me from '../assets/1.webp'
+import me from '../assets/1.webp';
+
+import {useLocation} from "react-router-dom";
 import {containerVariants, imgVariants, textVariants} from "../constants/animationVariants.js";
 
-
 const Hero = () => {
+    const location = useLocation();
+
+    const queryParams = new URLSearchParams(location.search);
+    const language = queryParams.get('l');
+
+
+    const resumeLink = language === 'u'
+        ? HERO_CONTENT.resumeLinkUkr
+        : HERO_CONTENT.resumeLinkWorld;
+
     return (
         <section>
             <div className='relative z-10 min-h-screen flex flex-wrap flex-col
@@ -35,15 +46,14 @@ const Hero = () => {
                     <motion.a
                         className='bg-stone-50 text-stone-900 p-3
                     lg:p-4 mt-8 inline-block rounded-2x1 hover:bg-gray-100 '
-                        href={HERO_CONTENT.resumeLink}
-                        rel=" noopener noreferrer"
+                        href={resumeLink}
+                        rel="noopener noreferrer"
                         target="_blank"
                         variants={textVariants}
                     >
                         {HERO_CONTENT.resumeLinkText}
                     </motion.a>
                 </motion.div>
-
 
                 <motion.div
                     className="w-full md:w-1/2 p-8"
@@ -56,7 +66,7 @@ const Hero = () => {
                 </motion.div>
             </div>
         </section>
-    )
+    );
 };
 
 export default Hero;
