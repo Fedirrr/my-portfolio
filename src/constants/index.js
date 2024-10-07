@@ -84,7 +84,7 @@ export const SKILLS_CONTENT = [
 
 export const EXPERIENCES = [
     {
-        name: 'Feb 2023 — Jul 2024',
+        name: 'Feb 2023 — Aug 2024',
         job: 'Middle Pro React Frontend Engineer at Cleveroad',
         location: 'Remote, Lviv, Ukraine',
         items: [
